@@ -1,0 +1,17 @@
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\serverForm.exe.config
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\serverForm.exe
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\serverForm.pdb
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\Google.Protobuf.dll
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\MySql.Data.dll
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\Google.Protobuf.xml
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\bin\Release\MySql.Data.xml
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.csprojAssemblyReference.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.Properties.Resources.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.csproj.GenerateResource.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.csproj.CopyComplete
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.exe
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.pdb
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.ServerForm.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\serverForm\serverForm\obj\Release\serverForm.ServerEdit.resources

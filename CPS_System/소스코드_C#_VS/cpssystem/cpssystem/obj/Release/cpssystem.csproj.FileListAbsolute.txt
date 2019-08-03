@@ -1,0 +1,28 @@
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\bin\Release\cpssystem.exe.config
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\bin\Release\cpssystem.exe
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\bin\Release\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.FormMain.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.exe
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Release\cpssystem.SocketEdit.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\bin\Release\cpssystem.exe.config
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\bin\Release\cpssystem.exe
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\bin\Release\cpssystem.pdb
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.FormMain.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.SocketEdit.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.exe
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Release\cpssystem.pdb

@@ -1,0 +1,93 @@
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.FormLogin.resources
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\bin\Debug\cpssystem.exe.config
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\bin\Debug\cpssystem.exe
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\bin\Debug\cpssystem.pdb
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.exe
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.pdb
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoin.resources
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc04\source\repos\cpssystem\cpssystem\obj\Debug\cpssystem.FormMain.resources
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\bin\Debug\cpssystem.exe.config
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\bin\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\bin\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.FormMain.resources
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\cpssystem\cpssystem\cpssystem\obj\Debug\cpssystem.pdb
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\bin\Debug\cpssystem.exe.config
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\bin\Debug\cpssystem.exe
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\bin\Debug\cpssystem.pdb
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.FormMain.resources
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.exe
+C:\Users\win10-pc03\Documents\카카오톡 받은 파일\cpssystem (1)\cpssystem\cpssystem\obj\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\bin\Debug\cpssystem.exe.config
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\bin\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\bin\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.FormMain.resources
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\cpssystem_ver0.2\cpssystem_ver0.2\cpssystem\cpssystem\obj\Debug\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\bin\Debug\cpssystem.exe.config
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\bin\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\bin\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormMain.resources
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\0717\0717\cpssystem\cpssystem\obj\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\bin\Debug\cpssystem.exe.config
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\bin\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\bin\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.FormMain.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.exe
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.pdb
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\source\repos\0717.1\0717\cpssystem\cpssystem\obj\Debug\cpssystem.SocketEdit.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\bin\Debug\cpssystem.exe.config
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\bin\Debug\cpssystem.exe
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\bin\Debug\cpssystem.pdb
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.csprojAssemblyReference.cache
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoin.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.FormJoinSucess.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.FormLogin.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.FormMain.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.Properties.Resources.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.SocketEdit.resources
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.GenerateResource.cache
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.csproj.CoreCompileInputs.cache
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.exe
+C:\Users\win10-pc03\Desktop\Altiall Project\소스코드_C#_VS\cpssystem\cpssystem\obj\Debug\cpssystem.pdb
