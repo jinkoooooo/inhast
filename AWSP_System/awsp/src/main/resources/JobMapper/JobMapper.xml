@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="JobMapper">
+  
+  <select id="getList" resultType="com.inhatc.domain.JobVO">
+    <![CDATA[
+    select * from tbl_201744032_job
+    ]]>
+  </select>
+  
+  <insert id="insert">
+    insert into tbl_201744032_job (ent_name, ent_job, ent_money, ent_person, ent_year, ent_card)
+    values (#{ent_name}, #{ent_job}, #{ent_money}, #{ent_person}, #{ent_year}, #{ent_card})
+  </insert>
+  
+  <select id="select" resultType="com.inhatc.domain.JobVO">
+    select * from tbl_201744032_job where stu_id = #{ent_name}
+  </select>
+  
+  <delete id="remove" >
+    delete tbl_201744032_job where stu_id = #{ent_name}
+  </delete>
+  
+  <update id="modify" >
+    update tbl_201744032_job
+    set ent_job = #{stu_home},
+    ent_money = #{stu_pon},
+    ent_person = #{stu_email},
+    ent_year = #{ent_year},
+    ent_card = #{ent_card},
+    ent_date = sysdate
+    where ent_name = #{ent_name}
+  </update>
+  
+</mapper>
