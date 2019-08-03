@@ -1,0 +1,248 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace StackA
+{
+    class Program
+    {
+        static List<char> Input = new List<char>();
+        static List<char> Stack = new List<char>();
+        static List<double> ord = new List<double>();
+        static int top = -1;
+        static int j = 0;
+
+        static void Main(string[] args)
+        {
+            Input = InputStack();
+            Console.WriteLine();
+            Console.WriteLine("---------------------변환 과정-----------------------");
+            Console.WriteLine("symbol     연산자stack     postfix표기법");
+            Post();
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine();
+            Console.Write("후위 표기식 : ");
+            Print(Stack);
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("---------------------계산 과정-----------------------");
+            Console.WriteLine("symbol        연산         피연산자Stack");
+            Calculator(Stack);
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("계산 결과 : " + ord[0]);
+            Console.WriteLine();
+        }
+
+        private static void Calculator(List<char> a)
+        {
+            for(int i = 0; i < a.Count; i++)
+            {
+                Console.Write("  "+a[i] + "\t      ");//계산과정 출력
+                int check = Check(a[i]);
+                if (check == 0)
+                {
+                    ord.Add(int.Parse((a[i]).ToString()));
+                    Console.Write("                ");
+                }
+                else
+                {
+                    double one = Pop(ord);
+                    double two = Pop(ord);
+                    switch (a[i])
+                    {
+                        case '*':
+                            ord.Add(X(one, two));
+                            break;
+                        case '/':
+                            ord.Add(N(one, two));
+                            break;
+                        case '%':
+                            ord.Add(N_(one, two));
+                            break;
+                        case '+':
+                            ord.Add(P(one, two));
+                            break;
+                        case '-':
+                            ord.Add(M(one, two));
+                            break;
+                    }
+                    Console.Write(two);
+                    Console.Write(a[i]);
+                    Console.Write(one + "             ");
+                }
+                Print(ord);
+                Console.WriteLine();
+            }
+        }
+
+        private static double M(double one, double two)
+        {
+            return two - one;
+        }
+
+        private static double P(double one, double two)
+        {
+            return two + one;
+        }
+
+        private static double N_(double one, double two)
+        {
+            return two % one;
+        }
+
+        private static double N(double one, double two)
+        {
+            return two / one;
+        }
+
+        private static double X(double one, double two)
+        {
+            return two * one;
+        }
+
+        private static double Pop(List<double> ord)
+        {
+            double temp = ord[ord.Count - 1];
+            ord.RemoveAt(ord.Count - 1);
+            return temp;
+        }
+
+        private static void Print(List<double> a)
+        {
+            for (int i = 0; i < a.Count; i++)
+            {
+                Console.Write(a[i]+" ");
+            }
+        }
+
+        private static void Print(List<char> a)
+        {
+            for (int i = 0; i < a.Count; i++)
+            {
+                Console.Write(a[i]);
+            }
+        }
+
+        private static int Check(char tok)
+        {
+            int temp = 0; // 0 : 숫자
+            if (tok == '+' || tok == '-') temp = 3;
+            else if (tok == '*' || tok == '/' || tok == '%') temp = 2;
+            else if (tok == '(') temp = 1;
+            return temp;
+        }
+
+        private static void Post()//중위표기법을 후위표기법으로 바꾸는 메소드.
+        {
+            List<char> Op = new List<char>();
+            while (true)
+            {
+                if (Input[j] == ')') break;
+                int check = Check(Input[j]);
+                if (check == 0) Stack.Add(Input[j]);
+                else if (check == 1)
+                {
+                    j++;
+                    Post();
+                }
+                else if (check > 1)//check == 2or3
+                {
+                    if (Op.Count > 0)
+                    {
+                        while (Op.Count != 0)
+                        {
+                            if (Check(Op[Op.Count - 1]) <= check)
+                            {//앞서 연산자 스택에 들어있던 top위치의 연산자보다 우선순위가 낮으면 반복
+                                char tmp = Op[Op.Count - 1];
+                                Op.RemoveAt(Op.Count - 1);
+                                Stack.Add(tmp);
+                            }
+                            else break;//비교시 우선순위가 높으면 반복문 탈출
+                        }
+                        Op.Add(Input[j]);//탈출시 연산자스택에 쌓음.
+                    }
+                    else
+                    {
+                        Op.Add(Input[j]);
+                    }
+                }
+                //계산과정출력~!
+                Console.Write("   " + Input[j] + "\t\t");
+                Print(Op);
+                Console.Write("\t\t");
+                Print(Stack);
+                Console.WriteLine();
+
+                j++;
+                if (j > top)//반복문탈출
+                {
+                    break;
+                }
+            }
+            for (int i = Op.Count - 1; i >= 0; i--)
+            {
+                Stack.Add(Op[i]);
+            }
+        }
+
+        private static List<char> InputStack()//입력받은 String을 char스택형식으로 바꿈!!
+        {
+            List<char> temp = new List<char>();
+            string input = null;
+            bool pass = true;
+            while (pass)
+            {
+                Console.Write("계산 식 입력 : ");
+                input = Console.ReadLine();
+                pass = Check_sik(input);
+            }
+            for (int i = 0; i < input.Length; i++)
+            {
+                temp.Add(input[i]);
+                Program.top++;
+            }
+            return temp;
+        }
+
+        private static bool Check_sik(string input)//계산식 검사 메서드
+        {
+            List<char> tmp= new List<char>();
+            for (int i = 0; i < input.Length; i++)
+            {
+                tmp.Add(input[i]);
+            }
+            int right = 0, left = 0;
+            for(int i = 0; i < tmp.Count; i++)
+            {
+                if (i != 0 && tmp[i] != '(' && tmp[i] != ')')
+                {
+                    if (Check(tmp[i]) == Check(tmp[i - 1]))
+                    {
+                        Console.Clear();
+                        Console.WriteLine("계산식이 잘못 되었습니다.!!");
+                        return true;
+                    }
+                }
+
+                if (tmp[i] == '(')//괄호검사
+                {
+                    left++;
+                }
+                else if (tmp[i] == ')')
+                {
+                    right++;
+                }
+            }
+            if (left != right)
+            {
+                Console.Clear();
+                Console.WriteLine("계산식이 잘못 되었습니다.!!");
+                return true;
+            }
+            return false;
+        }
+    }
+}
