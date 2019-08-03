@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>All Schedule</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- // -->
+    <!-- //Load Cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- //Custom Function -->
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        window.onload = function () {
+
+            //카운트 다운 기능
+            document.getElementById("times").style.border = "0px solid #312A5A";
+            document.getElementById("times").style.backgroundColor = "#514E5D";
+            document.getElementById("tname").style.backgroundColor = "#050211";
+            document.getElementById("tname").style.width = "200px";
+            var r = 0;
+            //경기일정 array
+            a = new Array;
+            //배열 번호 0:월, 1:일, 2:시, 3:분, 4:경기명, 5:홈팀로고, 6:원정팀로고, 7:홈팀이름, 8:원정팀이름, 9:경기분석, 10:경기결과
+            a[0] = [9, 28, 3, 35, "Champions League" + "<br>" + "Group stage - D", "img/sportingcp.png", "img/bar.png", "Sporting CP", "FC Barcelona", "./9월28일.html", "0 - 1"];
+            a[1] = [10, 1, 23, 15, "La Liga" + "<br>" + "Match day 7", "img/bar.png", "img/palmas.png", "FC Barcelona", "Las Palmas", "./10월1일.html", "3 - 0"];
+            a[2] = [10, 15, 3, 35, "La Liga" + "<br>" + "Match day 8", "img/atmadrid.png", "img/bar.png", "AT. Madrid", "FC Barcelona", "./10월15일.html", "1 - 1"];
+            a[3] = [10, 22, 3, 45, "La Liga" + "<br>" + "Match day 9", "img/bar.png", "img/malaga.png", "FC Barcelona", "Malaga CF", "./10월22일.html", "2 - 0"];
+            a[4] = [10, 29, 03, 45, "La Liga" + "<br>" + "Match day 10", "img/athclub.png", "img/bar.png", "Ath. Club", "FC Barcelona", "./10월29일.html", "0 - 2"];
+            a[5] = [11, 1, 4, 45, "Champions League" + "<br>" + "Group stage - D", "img/olym.png", "img/bar.png", "Olympiacos", "FC Barcelona", "./11월1일.html", "0 - 0"];
+            a[6] = [11, 5, 4, 45, "La Liga" + "<br>" + "Match day 11", "img/bar.png", "img/sevilla.png", "FC Barcelona", "Sevilla FC", "./11월5일.html", "2 - 1"];
+            a[7] = [11, 18, 0, 15, "La Liga" + "<br>" + "Match day 12", "img/leganes.png", "img/bar.png", "CD Leganes", "FC Barcelona", null, "0 - 3"];
+            a[8] = [11, 23, 4, 45, "Champions League" + "<br>" + "nGroup stage - D", "img/juven.png", "img/bar.png", "Juventus", "FC Barcelona", "./11월23일.html", "0 - 0"];
+            a[9] = [11, 27, 4, 45, "La Liga" + "<br>" + "Match day 13", "img/valencia.png", "img/bar.png", "Valencia", "FC barcelona", "./11월27일.html", "1 - 1"];
+            a[10] = [12, 2, 21, 0, "La Liga" + "<br>" + "Match day 14", "img/bar.png", "img/celta.png", "FC Barcelona", "Celta De Vigo", "./12월2일.html", "2 - 2"];
+            a[11] = [12, 6, 4, 45, "Champions League" + "<br>" + "Group stage - D", "img/bar.png", "img/sportingcp.png", "FC Barcelona", "Sporting CP", null, "2 - 0"];
+            a[12] = [12, 11, 4, 45, "La Liga" + "<br>" + "Match day 15", "img/villarreal.png", "img/bar.png", "Villarreal CF", "FC Barcelona", "./12월11일.html", "0 - 2"];
+            a[13] = [12, 18, 4, 45, "La Liga" + "<br>" + "Match day 16", "img/bar.png", "img/deportivo.png", "FC Barcelona", "Deportivo", null, "4 - 0"];
+            a[14] = [12, 23, 4, 45, "La Liga" + "<br>" + "Match day 17", "img/realmadrid.png", "img/bar.png", "Real Madrid", "FC Barcelona", null, ""];//파일없음 : 경기분석을 하지못한 경기날짜.
+
+            while (1) { // 이미지난 월의 경기는 시작과 동시에 걸러지는 식.
+                if (a[r][0] != (new Date().getMonth() + 1)
+                    && a[r][0] < (new Date().getMonth() + 1)) {
+
+
+
+                    r++;
+                }
+                else break;
+            };
+            setInterval(function () {
+
+                 // 다음경기 [월, 일, 시간, 분]
+                var mon = 0, day = 0, hour = 0, min = 0, sec = 0;
+
+
+                //월이 같을 경우
+                if (a[r][0] == (new Date().getMonth() + 1)) {
+                    day = a[r][1] - new Date().getDate() - 1;
+                }
+                else { //월이 다를경우
+                    var mon = new Array(12);
+                    mon = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                    var nowm = new Date().getMonth();
+                    nowm = Number(nowm);
+                    day = mon[nowm] - new Date().getDate() + a[r][1] - 1;
+                    for (var i = 1; i < a[r][0] - nowm - 1; i++) {
+                        day += mon[nowm + i];
+                    }
+                }
+
+                //시, 분, 초 계산식
+                hour = 23 - new Date().getHours() + a[r][2];
+                min = 60 - new Date().getMinutes() + a[r][3];
+                sec = 60 - new Date().getSeconds();
+                if (min >= 60) {
+                    hour += 1;
+                    min -= 60;
+                }
+                if (hour >= 24) {
+                    day += 1;
+                    hour -= 24;
+                }
+                if (day <= -1) r++; //경기 시작됨 과 동시에 다음 경기로 리셋.!
+
+                //다음경기 때 마다 팀로고와 팀명이 바뀜
+                document.getElementById("testy").innerHTML = a[r][4] + "<br>" + a[r][1] + "/" + a[r][0] + "/" + "2017&nbsp" + "|" + "&nbsp" + a[r][2] + ":" + a[r][3];
+                document.getElementById("team1").src = a[r][5];
+                document.getElementById("team2").src = a[r][6];
+                document.getElementById("name1").innerHTML = a[r][7];
+                document.getElementById("name2").innerHTML = a[r][8];
+
+                //시간표시 HTML
+                document.getElementById("days").innerHTML = "&nbsp" + "&nbsp" + "&nbsp" + day + "&nbsp" + "&nbsp" + "&nbsp" + "|";
+                document.getElementById("hour").innerHTML = "&nbsp" + "&nbsp" + "&nbsp" + hour + "&nbsp" + "&nbsp" + "&nbsp" + "|";
+                document.getElementById("min").innerHTML = "&nbsp" + "&nbsp" + "&nbsp" + min + "&nbsp" + "&nbsp" + "&nbsp" + "|";
+                document.getElementById("sec").innerHTML = "&nbsp" + "&nbsp" + "&nbsp" + sec;
+            }, 1000);
+            //이다음 할것,!!!-> 끝난경기가 자동으로 result 페이지로 넘어가는거와 코드줄이기.
+;
+
+            //경기분석및 하이라이트 페이지로 이동 함수.
+            function click(e) {
+                if (a[e][9] == null) {
+                    alert("죄송합니다. 경기분석을 아직 하지 못하였습니다.")
+                }
+                else {
+                    location = a[e][9];
+                }
+            };
+
+            //자동 경기로고 바뀌기.및 경기들 자동추가.
+            var div = document.getElementById("nextgame");
+            var div1 = document.getElementById("resultgame");
+            var divrow, divcol, divmatchs, div0;
+            var divhead, divbody;
+            var div_2, div_3, img, id, clas;
+            var divvs, pvs, div2, div3;
+            var divlink, link;
+            var i, br, hr
+
+            for (i = 0; i < 14; i++) {
+
+                if ((a[i][0] != (new Date().getMonth() + 1)
+                    && a[i][0] < (new Date().getMonth() + 1))
+                    ||(a[i][0] == (new Date().getMonth() + 1)&&a[i][1] < (new Date().getDate() + 1))) {
+
+                    divrow = document.createElement("div");
+                    div1.appendChild(divrow);
+                    divrow.className = "row";
+                    divcol = document.createElement("div");
+                    divrow.appendChild(divcol);
+                    divcol.className = "col-md-12";
+                    divmatchs = document.createElement("div");
+                    divcol.appendChild(divmatchs);
+                    divmatchs.className = "matchs";
+                    div0 = document.createElement("div");
+                    divmatchs.appendChild(div0);
+
+
+                    divhead = document.createElement("div");//div 해드부분
+                    div0.appendChild(divhead);
+                    divhead.className = "head";
+                    divhead.innerHTML = a[i][4] + "<br>" + a[i][1] + "/" + a[i][0] + "/"
+                        + "2017&nbsp" + "|" + "&nbsp" + a[i][2] + ":" + a[i][3];
+
+                    divbody = document.createElement("div");//div 바디부분
+                    div0.appendChild(divbody);
+                    divbody.className = "body";
+                    div_2 = document.createElement("div");//홈팀 div
+                    divbody.appendChild(div_2);
+
+                    img = document.createElement("img"); //홈팀 로고
+                    div_2.appendChild(img);
+                    img.src = a[i][5];
+
+                    div_3 = document.createElement("div"); //홈팀 이름
+                    div_2.appendChild(div_3);
+                    div_3.innerHTML = a[i][7];
+
+                    divvs = document.createElement("div");// VS or 결과점수 부분
+                    divbody.appendChild(divvs);
+                    divvs.className = "vs";
+                    pvs = document.createElement("p");
+                    divvs.appendChild(pvs);
+                    pvs.innerHTML = a[i][10];
+
+                    div2 = document.createElement("div");//원정팀 div
+                    divbody.appendChild(div2);
+
+                    img = document.createElement("img"); //원정팀 로고
+                    div2.appendChild(img);
+                    img.src = a[i][6];
+
+                    div3 = document.createElement("div"); //원정팀 이름
+                    div2.appendChild(div3);
+                    div3.innerHTML = a[i][8];
+
+                    divlink = document.createElement("div");// 경기분석 링크!!!!!!!!!!고칠것!!!
+                    divbody.appendChild(divlink);
+                    divlink.className = "result";
+                    link = document.createElement("input");
+                    divlink.appendChild(link)
+                    link.type = "button";
+                    link.value = "경기분석 및 하이라이트";
+                    link.id = i;
+                    link.addEventListener("click", function () { click(this.id) });
+
+                    hr = document.createElement("hr");//줄간격 표시 및 띄우기
+                    div1.appendChild(hr);
+                    br = document.createElement("br");
+                    div1.appendChild(br);
+                }
+                else {
+                    divrow = document.createElement("div");
+                    div.appendChild(divrow);
+                    divrow.className = "row";
+                    divcol = document.createElement("div");
+                    divrow.appendChild(divcol);
+                    divcol.className = "col-md-12";
+                    divmatchs = document.createElement("div");
+                    divcol.appendChild(divmatchs);
+                    divmatchs.className = "matchs";
+                    div0 = document.createElement("div");
+                    divmatchs.appendChild(div0);
+
+
+                    divhead = document.createElement("div");//div 해드부분
+                    div0.appendChild(divhead);
+                    divhead.className = "head";
+                    divhead.innerHTML = a[i][4] + "<br>" + a[i][1] + "/" + a[i][0] + "/"
+                        + "2017&nbsp" + "|" + "&nbsp" + a[i][2] + ":" + a[i][3];
+
+                    divbody = document.createElement("div");//div 바디부분
+                    div0.appendChild(divbody);
+                    divbody.className = "body";
+                    div_2 = document.createElement("div");//홈팀 div
+                    divbody.appendChild(div_2);
+
+                    img = document.createElement("img"); //홈팀 로고
+                    div_2.appendChild(img);
+                    img.src = a[i][5];
+
+                    div_3 = document.createElement("div"); //홈팀 이름
+                    div_2.appendChild(div_3);
+                    div_3.innerHTML = a[i][7];
+
+                    divvs = document.createElement("div");// VS or 결과점수 부분
+                    divbody.appendChild(divvs);
+                    divvs.className = "vs";
+                    pvs = document.createElement("p");
+                    divvs.appendChild(pvs);
+                    pvs.innerHTML = "VS";
+
+                    div2 = document.createElement("div");//원정팀 div
+                    divbody.appendChild(div2);
+
+                    img = document.createElement("img"); //원정팀 로고
+                    div2.appendChild(img);
+                    img.src = a[i][6];
+
+                    div3 = document.createElement("div"); //원정팀 이름
+                    div2.appendChild(div3);
+                    div3.innerHTML = a[i][8];
+
+                    hr = document.createElement("hr");//줄간격 표시 및 띄우기
+                    div.appendChild(hr);
+                    br = document.createElement("br");
+                    div.appendChild(br);
+                }
+
+            }
+
+        };
+    </script>
+</head>
+<body>
+
+
+            <section id="schedule">
+                <div class="container" id="nextgame">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>All Schedule</h3>
+                        </div>
+                    </div>
+                    <div id="times">
+                        <div id="tname">
+                            <font size="2" color="white">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                Next match to be played in
+                            </font>
+                        </div>
+
+                        <font size="5" color="#9C8ED5">
+                            <span class="time" id="days"></span>
+                            <span class="time" id="hour"></span>
+                            <span class="time" id="min"></span>
+                            <span class="time" id="sec"></span>
+                        </font>
+
+                        <pre><font size="2" color="white">    Days         hours         minutes         seconds</font></pre>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="matchs">
+                                <div>
+                                    <div class="head" id="testy">
+                                    </div>
+
+                                    <div class="body">
+                                        <div>
+                                            <img src="" id="team1">
+                                            <div id="name1"></div>
+                                        </div>
+                                        <div class="vs">
+                                            <p>VS</p>
+                                        </div>
+                                        <div>
+                                            <img src="" id="team2">
+                                            <div id="name2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br /><hr />
+
+
+                </div>
+            </section>
+
+            <section id="schedule">
+                <div class="container" id="resultgame">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Result Schedule</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    
+</body>
+</html>
